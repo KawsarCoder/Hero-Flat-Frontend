@@ -1,0 +1,8 @@
+.contact-bg-image {
+  background-image: url(../../../assests/Home/contact.jpg);
+}
+
+.contactFormImage {
+  background: url(../../../assests/Home/ContactForm.png);
+  background-repeat: no-repeat;
+}
