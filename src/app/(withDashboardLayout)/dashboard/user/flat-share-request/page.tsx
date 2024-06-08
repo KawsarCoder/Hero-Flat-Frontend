@@ -2,6 +2,7 @@
 import { useGetAllFlatsQuery } from "@/redux/api/flatApi";
 import CommonDashboardHeaderTitle from "@/shared/CommonDashboardHeaderTitle/CommonDashboardHeaderTitle";
 import InfoIcon from "@mui/icons-material/Info";
+import OutboxIcon from "@mui/icons-material/Outbox";
 import SendAndArchiveIcon from "@mui/icons-material/SendAndArchive";
 import { Box, IconButton, Skeleton } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
@@ -44,11 +45,11 @@ function FlatRequestPage() {
               onClick={() => handleRequest(row.id)}
               title="Send Flat Request"
             >
-              <SendAndArchiveIcon />
+              <OutboxIcon className="text-sky-600" />
             </IconButton>
             <Link href={`/flatDetails/${row.id}`}>
               <IconButton title="See Flat Details">
-                <InfoIcon />
+                <InfoIcon className="text-purple-600" />
               </IconButton>
             </Link>
           </Box>

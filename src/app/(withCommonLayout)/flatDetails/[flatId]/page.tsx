@@ -24,7 +24,7 @@ function FlatDetailPage({ params }: TProps) {
       {!isLoading ? (
         <main className="my-8">
           <div className="container mx-auto px-6">
-            <div className=" rounded-md overflow-hidden bg-cover bg-center grid grid-cols-3 gap-6">
+            <div className=" rounded-md overflow-hidden bg-cover bg-center grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div className="flex items-center h-full shadow-md justify-between bg-purple-200 p-6">
                 <div className=" max-w-xl">
                   <div
@@ -32,7 +32,7 @@ function FlatDetailPage({ params }: TProps) {
                     style={{ backgroundImage: `url('${data?.flatPhoto[0]}')` }}
                   ></div>
                   <h2 className="sm:text-3xl text-xl font-semibold font-Lora pt-4">
-                    Living With Present...
+                    Your Dream comes true
                   </h2>
                   <p className="mt-2 text-gray-500 sm:text-base text-xs font-normal font-Ubuntu">
                     {data?.description}
@@ -66,7 +66,7 @@ function FlatDetailPage({ params }: TProps) {
                       }}
                     ></div>
                     <h2 className="sm:text-3xl text-xl font-semibold mt-2 font-Lora">
-                      Remember The Story
+                      Explore the new world
                     </h2>
                     <p className="mt-2 text-gray-500 font-Ubuntu sm:text-base text-xs">
                       {data?.utilitiesDescription}
@@ -99,7 +99,7 @@ function FlatDetailPage({ params }: TProps) {
                     ></div>
                     <h2 className="sm:text-3xl text-xl font-semibold font-Lora mt-2">
                       {" "}
-                      See This Amazing way
+                      Wonder the Flat Earth
                     </h2>
                     <p className="mt-2 text-gray-500 font-Ubuntu text-xs sm:text-base">
                       {data?.description}
@@ -129,19 +129,6 @@ function FlatDetailPage({ params }: TProps) {
                 Flat details
               </h1>
               <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4 mt-6 mx-auto">
-                <div className="grid justify-center justify-items-center p-4 bg-purple-100 rounded-md shadow-sm">
-                  <div className="p-3 size-12 text-white bg-purple-600 rounded-full text-center">
-                    <SingleBedIcon />
-                  </div>
-                  <div>
-                    <p className="text-lg font-semibold font-Ubuntu">
-                      {"Total Rooms"}
-                    </p>
-                    <p className="text-xl font-Lora font-semibold text-center">
-                      {data?.totalRooms}
-                    </p>
-                  </div>
-                </div>
                 <div className="grid justify-items-center p-4 bg-purple-100 rounded-md shadow-sm">
                   <div className="p-3 size-12 text-white bg-purple-600 rounded-full ">
                     <StraightenIcon />
@@ -152,6 +139,19 @@ function FlatDetailPage({ params }: TProps) {
                     </p>
                     <p className="text-xl font-Lora font-semibold text-center">
                       {data?.squareFeet}
+                    </p>
+                  </div>
+                </div>
+                <div className="grid justify-center justify-items-center p-4 bg-purple-100 rounded-md shadow-sm">
+                  <div className="p-3 flex justify-center size-12 text-white bg-purple-600 rounded-full text-center">
+                    <ChairIcon />
+                  </div>
+                  <div>
+                    <p className="sm:text-lg text-lg font-semibold font-Ubuntu">
+                      {"Total Bedrooms"}
+                    </p>
+                    <p className="text-xl font-Lora font-semibold text-center">
+                      {data?.totalBedrooms}
                     </p>
                   </div>
                 </div>
@@ -169,15 +169,15 @@ function FlatDetailPage({ params }: TProps) {
                   </div>
                 </div>
                 <div className="grid justify-center justify-items-center p-4 bg-purple-100 rounded-md shadow-sm">
-                  <div className="p-3 flex justify-center size-12 text-white bg-purple-600 rounded-full text-center">
-                    <ChairIcon />
+                  <div className="p-3 size-12 text-white bg-purple-600 rounded-full text-center">
+                    <SingleBedIcon />
                   </div>
                   <div>
-                    <p className="sm:text-lg text-lg font-semibold font-Ubuntu">
-                      {"Total Bedrooms"}
+                    <p className="text-lg font-semibold font-Ubuntu">
+                      {"Total Rooms"}
                     </p>
                     <p className="text-xl font-Lora font-semibold text-center">
-                      {data?.totalBedrooms}
+                      {data?.totalRooms}
                     </p>
                   </div>
                 </div>
@@ -195,8 +195,32 @@ function FlatDetailPage({ params }: TProps) {
                   ></div>
 
                   <div className="w-full px-4">
-                    <div className=" grid grid-cols-2">
+                    <div className=" grid grid-cols-1 lg:grid-cols-2">
                       <div className="w-full px-4">
+                        <div className="relative flex flex-col min-w-0 rounded-md">
+                          <div className="px-4 py-5 flex-auto">
+                            <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-violet-600 text-white ">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="size-6"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                  clipRule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                            <h6 className="sm:text-xl text-lg mb-1 font-semibold font-Lora">
+                              Location
+                            </h6>
+                            <p className="mb-4 text-gray-700 font-normal font-Ubuntu sm:text-sm text-xs">
+                              {data?.location}
+                            </p>
+                          </div>
+                        </div>
                         <div className="flex flex-col rounded-md">
                           <div className="px-4 py-5 flex-auto">
                             <div className="p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-violet-600 text-white ">
@@ -216,34 +240,10 @@ function FlatDetailPage({ params }: TProps) {
                               </svg>
                             </div>
                             <h6 className="sm:text-xl text-lg mb-1 font-semibold font-Lora">
-                              Utilities Description
+                              Describe the utils
                             </h6>
                             <p className="mb-4 text-gray-700 font-normal font-Ubuntu sm:text-sm text-xs">
                               {data?.utilitiesDescription}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="relative flex flex-col min-w-0 rounded-md">
-                          <div className="px-4 py-5 flex-auto">
-                            <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-violet-600 text-white ">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                className="size-6"
-                              >
-                                <path
-                                  fillRule="evenodd"
-                                  d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-                                  clipRule="evenodd"
-                                />
-                              </svg>
-                            </div>
-                            <h6 className="sm:text-xl text-lg mb-1 font-semibold font-Lora">
-                              Flat Location
-                            </h6>
-                            <p className="mb-4 text-gray-700 font-normal font-Ubuntu sm:text-sm text-xs">
-                              {data?.location}
                             </p>
                           </div>
                         </div>
@@ -262,14 +262,14 @@ function FlatDetailPage({ params }: TProps) {
                               </svg>
                             </div>
                             <h6 className="sm:text-xl text-lg mb-1 font-semibold font-Lora">
-                              Amenities
+                              Facilities
                             </h6>
                             <p className="mb-4 text-gray-700 font-normal font-Ubuntu sm:text-sm text-xs">
                               {data?.amenities}
                             </p>
                           </div>
                         </div>
-                        <div className="relative flex flex-col cursor-pointer hover:translate-y-1 duration-300 min-w-0 rounded-md">
+                        <div className="relative flex flex-col min-w-0 rounded-md">
                           <div className="px-4 py-5 flex-auto">
                             <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-violet-600 text-white">
                               <svg
@@ -286,7 +286,7 @@ function FlatDetailPage({ params }: TProps) {
                               </svg>
                             </div>
                             <h6 className="sm:text-xl text-lg mb-1 font-semibold font-Lora">
-                              Description
+                              About
                             </h6>
                             <p className="mb-4 text-gray-700 font-normal font-Ubuntu sm:text-sm text-xs">
                               {data?.description}

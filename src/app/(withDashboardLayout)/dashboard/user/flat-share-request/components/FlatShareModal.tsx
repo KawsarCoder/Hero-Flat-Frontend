@@ -112,7 +112,7 @@ const FlatShareModal = ({ isModalOpen, setModalOpen, flatId }: TProps) => {
             </label>
           </div>
           <button
-            className="px-8 font-Lora font-medium mt-3 py-2 text-white text-sm rounded-md bg-orange-600"
+            className="px-8 font-Lora font-medium mt-3 py-2 text-white text-sm rounded-md bg-purple-600"
             type="submit"
           >
             Submit

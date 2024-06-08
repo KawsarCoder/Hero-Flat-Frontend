@@ -130,17 +130,20 @@ function PostFlatPage() {
           <Grid item xs={12} sm={12} md={4}>
             <RUInput name="amenities" label="Amenities" fullWidth={true} />
           </Grid>
+          <Grid item xs={12} sm={12} md={4}></Grid>
           <Grid item xs={12} sm={12} md={4}>
             <ImageUploader setImageUrls={setImageUrls} />
           </Grid>
         </Grid>
 
-        <button
-          className="px-3 py-2 text-white text-sm font-semibold rounded-md bg-purple-600 font-Lora"
-          type="submit"
-        >
-          Submit
-        </button>
+        <div className="grid justify-items-center">
+          <button
+            className="px-3 py-2 text-white text-sm font-semibold rounded-md bg-purple-600 font-Lora w-1/3"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
       </RUForm>
     </section>
   );

@@ -6,21 +6,21 @@ function SearchShowCardSection() {
   return (
     <section className="container">
       <HomeSectionTitle
-        mainTitle="Living Life With Own Preference"
-        subTitle="This is actual life, feel the fear of everything..."
+        mainTitle="Live in your Dreams"
+        subTitle="Grow in your dreams and enjoy..."
       />
       <label
-        className="sm:mx-auto mx-3 mt-8 relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-lg focus-within:border-gray-300 mb-10"
+        className="sm:mx-auto mx-3 mt-8 relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 focus-within:border-gray-300 mb-10"
         htmlFor="search-bar"
       >
         <input
           id="search-bar"
-          placeholder="Search by flat using location, rent, bedrooms, description..."
+          placeholder="Search"
           className="px-6 py-2 w-full rounded-md flex-1 outline-none font-Ubuntu text-sm bg-white"
         />
         <button
           onClick={handleSearch}
-          className="w-full md:w-auto px-6 py-3 bg-black border-black text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70"
+          className="w-full md:w-auto px-6 py-3 bg-purple-600 border-purple-600 text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70"
         >
           <div className="relative">
             <div className="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all">
