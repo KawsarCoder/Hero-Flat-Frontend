@@ -7,7 +7,9 @@ import { tagTypesList } from "../tagTypes/tagTypes";
 // Define a service using a base URL and expected endpoints
 export const baseApi = createApi({
   reducerPath: "baseApi",
-  baseQuery: axiosBaseQuery({ baseUrl: "http://localhost:5000/api/" }),
+  baseQuery: axiosBaseQuery({
+    baseUrl: "https://hero-flat-backend.vercel.app/api",
+  }),
   endpoints: () => ({}),
   tagTypes: tagTypesList,
 });

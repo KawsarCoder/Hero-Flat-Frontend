@@ -17,11 +17,6 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en">
-        <link
-          rel="shortcut icon"
-          href="../assests/Home/favicon.png"
-          type="image/x-icon"
-        />
         <body>
           {" "}
           <Toaster richColors />

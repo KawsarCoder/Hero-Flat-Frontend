@@ -69,11 +69,11 @@ const NavBar = () => {
   return (
     <>
       <div className="relative bg-white container mx-auto">
-        <div className=" mx-auto px-4 sm:px-0">
+        <div className=" mx-auto px-10 sm:px-0">
           <div className="flex justify-between items-center border-b-2 border-gray-100 py-4 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Link href="/">
-                <h1 className=" font-bold text-3xl font-Lora text-purple-600">
+                <h1 className=" font-bold text-3xl font-Lora text-purple-600 ml-8">
                   Hero Flat
                 </h1>
               </Link>
