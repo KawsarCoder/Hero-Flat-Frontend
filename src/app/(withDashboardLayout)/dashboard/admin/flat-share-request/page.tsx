@@ -23,7 +23,7 @@ function FlatShareRequestManagement() {
     await refetch();
 
     if (res?.id) {
-      toast.success("Boss!!! you changed the status...");
+      toast.success("Changed the status...");
     }
   };
 

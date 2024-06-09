@@ -28,7 +28,7 @@ function ManageAllFlats() {
   };
 
   const showToast = (id?: string) => {
-    toast("Boss!!! Are you sure want to delete this flat.?", {
+    toast("Are you sure want to delete this flat.?", {
       action: {
         label: "Yes!!",
         onClick: () => handleDeleteFlat(id),

@@ -25,7 +25,7 @@ function UserManagementPage() {
     const res = await updateNormalUserInfo(payload).unwrap();
     await refetch();
     if (res?.id) {
-      toast.success("Boss!!! you make it this...");
+      toast.success("You make this...");
     }
   };
 

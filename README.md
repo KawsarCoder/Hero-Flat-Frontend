@@ -1,37 +1,126 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hero Flat Application - Frontend
+
+This is the frontend part of the Hero Flat Application, a fully-fledged, full-stack dynamic web app built with Next.js, TypeScript, TailwindCSS, and other modern technologies. The frontend interacts with the backend to provide features like authentication, validation, filtering, and CRUD operations.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Node.js
+- npm or yarn
+- TypeScript
+- NextJS
+- Redux
+- Tailwindcss
+- Axios
+- Material UI
+- AOS Animation
+
+## Project Structure
+
+```
+Hero Flat Application Frontend/
+├── components/
+│   ├── common/
+│   ├── layout/
+│   ├── flats/
+│   └── user/
+├── pages/
+│   ├── api/
+│   ├── flats/
+│   ├── user/
+│   ├── _app.tsx
+│   ├── index.tsx
+│   └── ...
+├── public/
+├── styles/
+│   ├── globals.css
+│   └── ...
+├── .env
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/KawsarCoder/Hero-Flat-Frontend
+cd hero-flat-frontend
+npm install
+# or
+yarn install
+```
+
+### Running the Project
+
+**Development:**
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The development server will start on `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Production:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+# or
+yarn build
+```
 
-## Learn More
+After building, you can start the production server with:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+# or
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `dev`: Runs the application in development mode.
+- `build`: Builds the application for production.
+- `start`: Starts the application in production mode.
+- `lint`: Runs ESLint for code quality checks.
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Authentication**: Secure user authentication with JWT.
+- **Role Management**: Different functionalities for Admin, Super Admin, and User roles.
+- **CRUD Operations**: Create, read, update, and delete flats.
+- **Filtering**: Filter flats based on various criteria.
+- **Responsive Design**: Optimized for different screen sizes using TailwindCSS.
+- **Animations**: Smooth animations using AOS Animation.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# Hero-Flat-Frontend
+## Role Features
+
+### Admin
+
+- Manage users (edit, delete, role change, status change).
+- Manage all flat requests.
+- Add, edit, delete flats.
+
+### User
+
+- View all flats and details.
+- Request available flats.
+- Update profile.
+- Check flat and request status from the dashboard.
+
+## URLs
+
+- **Frontend**: [Hero Flat Frontend](https://hero-flat-frontend.vercel.app/)
+- **Backend**: [Hero Flat Backend](https://hero-flat-backend.vercel.app/)
+
+## Video Overview
+
+For a comprehensive overview of the application features, please watch the [full overview video](https://drive.google.com/file/d/1uOCoHrM12E6NOYDOs-EX1GGgLE-2iY9n/view?usp=sharing).

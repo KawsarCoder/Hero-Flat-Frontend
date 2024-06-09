@@ -63,7 +63,7 @@ function UpdateFlatPage({ params }: TProps) {
     <section>
       <CommonDashboardHeaderTitle
         mainTitle="Update your flat"
-        secondaryTitle="Boss!!! you can update your flat"
+        secondaryTitle="You can update your flat"
       />
       <RUForm defaultValues={defaultValues} onSubmit={handleOnSubmit}>
         <Grid container spacing={2} sx={{ my: 1 }}>
